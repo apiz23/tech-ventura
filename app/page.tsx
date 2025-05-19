@@ -1,7 +1,5 @@
 "use client";
 
-import { VideoText } from "@/components/magicui/video-text";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import tvLogo from "@/public/tvLogo.png";
 import { Button } from "@/components/ui/button";
@@ -33,7 +31,7 @@ export default function Home() {
 		<>
 			<section className="min-h-screen">
 				<div className="w-full grid grid-cols-1 md:grid-cols-2 md:gap-3">
-					<div className="block  p-4 md:ps-32 py-40">
+					<div className="order-2 md:order-1 block p-4 md:ps-32 py-40 text-center">
 						<h1 className="scroll-m-20 text-5xl font-extrabold tracking-normal lg:text-7xl">
 							Launch. Build. Elevate. At Tech Ventura
 						</h1>
@@ -46,7 +44,7 @@ export default function Home() {
 							Explore Our Projects
 						</Button>
 					</div>
-					<div className="md:py-40">
+					<div className="order-1 md:order-2 pt-14 md:py-40">
 						<Image
 							src={tvLogo}
 							alt="tvLogo"
@@ -55,24 +53,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			{/* <motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 1 }}
-				className="min-h-screen flex items-center justify-center bg-gray-100"
-				id="about"
-			>
-				<h1 className="text-4xl">About Us</h1>
-			</motion.div>
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 1 }}
-				className="min-h-screen flex items-center justify-center bg-gray-100"
-				id="hero"
-			>
-				<h1 className="text-4xl">CareerX Day Projects</h1>
-			</motion.div> */}
 		</>
 	);
 }
