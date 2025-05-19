@@ -1,5 +1,5 @@
 import Link from "next/link";
-import tvLogo from "@/public/tvLogo.png";
+import tvLogo from "@/public/tvLogo.svg";
 import Image from "next/image";
 
 export default function Footer() {

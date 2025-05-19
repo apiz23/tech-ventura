@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import tvLogo from "@/public/tvLogo.png";
+import tvLogo from "@/public/tvLogo.svg";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -30,7 +30,7 @@ export default function Home() {
 	return (
 		<>
 			<section className="min-h-[90vh]">
-				<div className="md:max-w-[70vw] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-3">
+				<div className="md:max-w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-3">
 					<div className="order-2 md:order-1 block p-4 md:ps-32 py-24 md:pt-44 md:text-left text-center">
 						<h1 className="scroll-m-20 text-5xl font-extrabold tracking-normal lg:text-7xl">
 							Launch. Build. Elevate. At Tech Ventura
@@ -48,11 +48,20 @@ export default function Home() {
 						<Image
 							src={tvLogo}
 							alt="tvLogo"
-							className="mx-auto h-[20vh] md:h-[25vh] w-fit"
+							className="mx-auto h-[20vh] md:h-[40vh] w-fit"
 						/>
 					</div>
 				</div>
 			</section>
+			{/* <section className="min-h-screen">
+				<div className="md:max-w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-3">
+					<div className="py-24 md:pt-44 text-center">
+						<h1 className="scroll-m-20 text-5xl font-extrabold tracking-normal lg:text-7xl">
+							Our Project
+						</h1>
+					</div>
+				</div>
+			</section> */}
 		</>
 	);
 }

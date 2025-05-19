@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import tvLogo from "@/public/tvLogo.png";
+import tvLogo from "@/public/tvLogo.svg";
 import { Button } from "./ui/button";
 import {
 	Drawer,
@@ -36,7 +36,9 @@ export default function Header() {
 				</div>
 
 				<div className="hidden md:flex items-center gap-4">
-					<Button>Contact Us</Button>
+					<Link href="http://wa.me/60102336374">
+						<Button>Contact Us</Button>
+					</Link>
 				</div>
 
 				<div className="md:hidden">
