@@ -3,9 +3,6 @@
 import { Carousel } from "@/components/custom-carousel";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
-import flexiPos from "@/public/projects/Flexi-POS.png";
-import presenceNFC from "@/public/projects/Flexi-POS.png";
-import tammyAi from "@/public/projects/Tammy-Ai.png";
 
 export default function Page() {
 	const slideData = [
