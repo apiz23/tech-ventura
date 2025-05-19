@@ -30,8 +30,8 @@ export default function Home() {
 	return (
 		<>
 			<section className="min-h-[90vh]">
-				<div className="max-w-[70vw] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-3">
-					<div className="order-2 md:order-1 block p-4 md:ps-32 pt-44 md:text-left text-center">
+				<div className="md:max-w-[70vw] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-3">
+					<div className="order-2 md:order-1 block p-4 md:ps-32 py-24 md:pt-44 md:text-left text-center">
 						<h1 className="scroll-m-20 text-5xl font-extrabold tracking-normal lg:text-7xl">
 							Launch. Build. Elevate. At Tech Ventura
 						</h1>
