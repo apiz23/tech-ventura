@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "../globals.css";
-
-const poppins = Poppins({
-	weight: "500",
-	subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
 	title: "CareerX | Tech Ventura",
-	description: "CareerX Event | Tech Ventura Offical Website",
+	description: "CareerX Event | Tech Ventura Official Website",
 	icons: {
 		icon: [
 			{
@@ -25,9 +18,5 @@ export default function CareerXLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className={`${poppins.className} antialiased`}>{children}</body>
-		</html>
-	);
+	return <section className="min-h-screen">{children}</section>;
 }
