@@ -36,7 +36,7 @@ export default function Header() {
 				</div>
 
 				<div className="hidden md:flex items-center gap-4">
-					<Link href="http://wa.me/60102336374">
+					<Link href="http://wa.me/60102336374" target="_blank">
 						<Button>Contact Us</Button>
 					</Link>
 				</div>
@@ -65,7 +65,9 @@ export default function Header() {
 							</div>
 
 							<DrawerFooter>
-								<Button>Contact Us</Button>
+								<Link href="http://wa.me/60102336374" target="_blank">
+									<Button>Contact Us</Button>
+								</Link>
 								<DrawerClose asChild>
 									<Button variant="outline">Close</Button>
 								</DrawerClose>
