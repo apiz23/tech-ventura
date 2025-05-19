@@ -12,6 +12,14 @@ const poppins = Poppins({
 export const metadata: Metadata = {
 	title: "Tech Ventura",
 	description: "Tech Ventura Offical Website",
+	icons: {
+		icon: [
+			{
+				url: "/tvLogo2.png",
+				href: "/tvLogo2.png",
+			},
+		],
+	},
 };
 
 export default function RootLayout({
