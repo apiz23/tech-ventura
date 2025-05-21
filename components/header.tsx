@@ -10,7 +10,6 @@ import {
 	DrawerContent,
 	DrawerHeader,
 	DrawerTitle,
-	DrawerDescription,
 	DrawerFooter,
 	DrawerClose,
 } from "@/components/ui/drawer";
@@ -48,10 +47,9 @@ export default function Header() {
 								<Menu className="h-5 w-5" />
 							</Button>
 						</DrawerTrigger>
-						<DrawerContent>
+						<DrawerContent className="min-h-[40vh]">
 							<DrawerHeader>
-								<DrawerTitle>Tech Ventura</DrawerTitle>
-								<DrawerDescription>Menu</DrawerDescription>
+								<DrawerTitle>Tech Ventura Menu</DrawerTitle>
 							</DrawerHeader>
 
 							<div className="flex flex-col px-4 gap-3 pb-4">
@@ -66,7 +64,7 @@ export default function Header() {
 
 							<DrawerFooter>
 								<Link href="http://wa.me/60102336374" target="_blank">
-									<Button>Contact Us</Button>
+									<Button className="w-full">Contact Us</Button>
 								</Link>
 								<DrawerClose asChild>
 									<Button variant="outline">Close</Button>
