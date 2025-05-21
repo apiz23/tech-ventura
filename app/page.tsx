@@ -66,7 +66,7 @@ export default function Home() {
 						</p>
 
 						<Link
-							href="#"
+							href="#project"
 							className="group relative inline-block focus:ring-3 focus:outline-hidden mt-6"
 						>
 							<span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
@@ -85,10 +85,10 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<div className="min-h-screen">
+			<div className="min-h-screen" id="project">
 				<div className="max-w-4xl mx-auto">
 					<h1 className="text-center text-5xl font-semibold leading-none tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl">
-						Our Past {" "}
+						Our Past{" "}
 						<LineShadowText className="italic" shadowColor={"black"}>
 							Project
 						</LineShadowText>
